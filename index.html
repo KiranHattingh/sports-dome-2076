@@ -1,0 +1,325 @@
+<head>
+
+
+
+
+<title>Michaelhouse Sports Dome 2075</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#081421;
+    color:white;
+}
+
+header{
+    background:#0d2035;
+    text-align:center;
+    padding:20px;
+    border-bottom:3px solid #00bfff;
+}
+
+.logo{
+    width:150px;
+}
+
+h1{
+    color:#00bfff;
+    margin:10px;
+}
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h2{
+    font-size:45px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.6;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:#00bfff;
+    color:white;
+    padding:12px 25px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.button:hover{
+    background:#0099cc;
+}
+
+.sports{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    width:250px;
+    background:#10253b;
+    border:2px solid #00bfff;
+    border-radius:10px;
+    padding:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#153250;
+}
+
+.card h3{
+    color:#00bfff;
+}
+
+#sportInfo{
+    max-width:1000px;
+    margin:20px auto 50px auto;
+    background:#10253b;
+    border:2px solid #00bfff;
+    border-radius:10px;
+    padding:30px;
+    line-height:1.8;
+}
+
+footer{
+    background:#0d2035;
+    text-align:center;
+    padding:20px;
+    border-top:3px solid #00bfff;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<!-- Replace logo.png with your logo filename -->
+<img src="logo.png" class="logo">
+
+<h1>MICHAELHOUSE SPORTS DOME 2075</h1>
+
+<p><strong>Shaping the Future of Sport, One Performance at a Time.</strong></p>
+
+</header>
+
+<section class="hero">
+
+<h2>Welcome to the Future of Sport</h2>
+
+<p>
+The Michaelhouse Sports Dome 2075 combines artificial intelligence,
+advanced sensors and performance tracking technology to help athletes
+train smarter, improve faster and reach their full potential.
+Every movement is analysed in real time to provide instant feedback
+and personalised coaching.
+</p>
+
+<a href="#sports" class="button">Explore the Dome</a>
+
+</section>
+
+<section class="sports" id="sports">
+
+<div class="card" onclick="showInfo('tennis')">
+<h3>🎾 Tennis</h3>
+<p>AI Serve Analysis</p>
+</div>
+
+<div class="card" onclick="showInfo('golf')">
+<h3>⛳ Golf</h3>
+<p>Smart Swing Tracking</p>
+</div>
+
+<div class="card" onclick="showInfo('rugby')">
+<h3>🏉 Rugby</h3>
+<p>Performance Analytics</p>
+</div>
+
+<div class="card" onclick="showInfo('cricket')">
+<h3>🏏 Cricket</h3>
+<p>Batting & Bowling Analysis</p>
+</div>
+
+<div class="card" onclick="showInfo('hockey')">
+<h3>🏑 Hockey</h3>
+<p>Movement & Tactical Tracking</p>
+</div>
+
+<div class="card" onclick="showInfo('coach')">
+<h3>🤖 AI Coach</h3>
+<p>Personalised Training</p>
+</div>
+
+</section>
+
+<div id="sportInfo">
+
+<h2>🏟️ Welcome to the Sports Dome</h2>
+
+<p>
+Click on any sport above to discover how futuristic technology
+helps athletes improve their performance.
+</p>
+
+</div>
+
+<footer>
+
+<p>Michaelhouse Sports Dome 2075 | School Project</p>
+
+</footer>
+
+<script>
+
+function showInfo(sport){
+
+const info = document.getElementById("sportInfo");
+
+if(sport === "tennis"){
+info.innerHTML = `
+<h2>🎾 Tennis Analysis Centre</h2>
+
+<p>
+The Tennis Analysis Centre uses thousands of sensors and AI cameras
+to analyse every serve and shot.
+</p>
+
+<ul>
+<li>Serve Speed Tracking</li>
+<li>Ball Spin Detection</li>
+<li>Shot Accuracy Analysis</li>
+<li>Racket Speed Monitoring</li>
+<li>Body Position Tracking</li>
+<li>Footwork Analysis</li>
+<li>Instant AI Coaching Feedback</li>
+<li>Performance History Tracking</li>
+</ul>
+`;
+}
+
+if(sport === "golf"){
+info.innerHTML = `
+<h2>⛳ Golf Performance Lab</h2>
+
+<p>
+The Golf Performance Lab helps players perfect every aspect of
+their swing.
+</p>
+
+<ul>
+<li>Swing Speed Analysis</li>
+<li>Club Angle Tracking</li>
+<li>Launch Angle Measurement</li>
+<li>Ball Flight Tracking</li>
+<li>Shot Accuracy Statistics</li>
+<li>Virtual Golf Courses</li>
+<li>AI Coaching Recommendations</li>
+</ul>
+`;
+}
+
+if(sport === "rugby"){
+info.innerHTML = `
+<h2>🏉 Rugby Performance Centre</h2>
+
+<p>
+Advanced tracking technology helps rugby players improve both
+individually and as a team.
+</p>
+
+<ul>
+<li>Sprint Speed Tracking</li>
+<li>Tackle Force Measurement</li>
+<li>Passing Accuracy Analysis</li>
+<li>Player Position Tracking</li>
+<li>Fitness Monitoring</li>
+<li>Match Performance Statistics</li>
+<li>Injury Prevention Alerts</li>
+</ul>
+`;
+}
+
+if(sport === "cricket"){
+info.innerHTML = `
+<h2>🏏 Cricket Analytics Hub</h2>
+
+<p>
+The Cricket Analytics Hub provides detailed analysis of batting
+and bowling performance.
+</p>
+
+<ul>
+<li>Bowling Speed Tracking</li>
+<li>Spin Rate Analysis</li>
+<li>Bat Swing Monitoring</li>
+<li>Shot Placement Tracking</li>
+<li>Reaction Time Testing</li>
+<li>AI Technique Improvement</li>
+</ul>
+`;
+}
+
+if(sport === "hockey"){
+info.innerHTML = `
+<h2>🏑 Hockey Training Zone</h2>
+
+<p>
+The Hockey Training Zone uses AI to improve skills and tactical
+awareness.
+</p>
+
+<ul>
+<li>Movement Tracking</li>
+<li>Passing Accuracy Analysis</li>
+<li>Shot Speed Monitoring</li>
+<li>Player Position Analysis</li>
+<li>Tactical Feedback</li>
+<li>Team Performance Statistics</li>
+</ul>
+`;
+}
+
+if(sport === "coach"){
+info.innerHTML = `
+<h2>🤖 AI Coaching Centre</h2>
+
+<p>
+The AI Coach works across every sport in the dome and creates
+personalised training plans.
+</p>
+
+<ul>
+<li>Instant Performance Feedback</li>
+<li>Personal Training Programmes</li>
+<li>Strength & Weakness Analysis</li>
+<li>Progress Tracking</li>
+<li>Future Performance Predictions</li>
+<li>Goal Setting Assistance</li>
+</ul>
+`;
+}
+
+}
+
+</script>
+
+</body>
+</html>
